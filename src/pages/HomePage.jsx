@@ -4,7 +4,7 @@ import HeroSection from "../components/HeroSection";
 import SkillSection from "../components/SkillSection";
 import ProjectSection from "../components/ProjectSection";
 import EducationSection from "../components/EducationSection";
-// import Contact from "../components/Contact";
+import ContactSection from "../components/ContactSection";
 // import ExperienceSection from "../components/ExperienceSection";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
@@ -52,7 +52,7 @@ const HomePage = () => {
       </section> */}
 
       <section id="contact" className="scroll-mt-24">
-        {/* <ContactSection /> */}
+        <ContactSection />
       </section>
     </div>
   );
