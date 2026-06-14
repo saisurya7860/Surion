@@ -89,15 +89,17 @@ const HeroSection = () => {
                 <p>Get in Touch</p>
               </Button>
 
-              <Button
-                size="lg"
-                fullWidth=""
-                className="flex items-center  justify-center gap-2 border border-slate-300 bg-white hover:bg-gray-50"
-                variant=""
-              >
-                <Download className="w-5 h-5" />
-                Resume
-              </Button>
+              <a href={about?.resume} target="_blank">
+                <Button
+                  size="lg"
+                  fullWidth=""
+                  className="flex items-center  justify-center gap-2 border border-slate-300 bg-white hover:bg-gray-50"
+                  variant=""
+                >
+                  <Download className="w-5 h-5" />
+                  Resume
+                </Button>
+              </a>
             </div>
           </div>
           {/* image div */}
