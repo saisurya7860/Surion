@@ -9,10 +9,8 @@ import { Link } from "react-router-dom";
 import RoleTypewriter from "../components/Hero/RoleTypewriter.jsx";
 import Loader from "../components/ui/Loader.jsx";
 import { getLinks } from "../services/socialLinkServices.js";
-import { Navigate } from "react-router-dom";
 
 const HeroSection = () => {
-  const navigate = Navigate();
   const [loading, setLoading] = useState(false);
   const [about, setAbout] = useState();
   const [links, setLinks] = useState();
