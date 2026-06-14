@@ -93,12 +93,13 @@ const HeroSection = () => {
               <a
                 href={about?.resume}
                 target="_blank"
-                rel="noopener noreferrer"
+                // rel="noopener noreferrer"
                 className="w-full sm:w-auto"
               >
                 <Button
                   size="lg"
-                  className="flex items-center justify-center gap-2 border border-slate-300 bg-white hover:bg-gray-50 text-slate-700"
+                  variant=""
+                  className="flex items-center justify-center gap-2 border border-slate-300 bg-gray-50 text-slate-700"
                 >
                   <File className="w-5 h-5" />
                   View Resume
