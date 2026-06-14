@@ -9,8 +9,10 @@ import { Link } from "react-router-dom";
 import RoleTypewriter from "../components/Hero/RoleTypewriter.jsx";
 import Loader from "../components/ui/Loader.jsx";
 import { getLinks } from "../services/socialLinkServices.js";
+import { Navigate } from "react-router-dom";
 
 const HeroSection = () => {
+  const navigate = Navigate();
   const [loading, setLoading] = useState(false);
   const [about, setAbout] = useState();
   const [links, setLinks] = useState();
@@ -89,15 +91,19 @@ const HeroSection = () => {
                 <p>Get in Touch</p>
               </Button>
 
-              <a href={about?.resume} target="_blank">
+            
+              <a
+                href={about?.resume}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto"
+              >
                 <Button
                   size="lg"
-                  fullWidth=""
-                  className="flex items-center  justify-center gap-2 border border-slate-300 bg-white hover:bg-gray-50"
-                  variant=""
+                  className="flex items-center justify-center gap-2 border border-slate-300 bg-white hover:bg-gray-50 text-slate-700"
                 >
-                  <Download className="w-5 h-5" />
-                  Resume
+                  <File className="w-5 h-5" />
+                  View Resume
                 </Button>
               </a>
             </div>
