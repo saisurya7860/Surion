@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import RoleTypewriter from "../components/Hero/RoleTypewriter.jsx";
 import Loader from "../components/ui/Loader.jsx";
 import { getLinks } from "../services/socialLinkServices.js";
+import resumePdf from "../assets/1.Surya__Resume.pdf";
 
 const HeroSection = () => {
   const [loading, setLoading] = useState(false);
@@ -91,7 +92,7 @@ const HeroSection = () => {
 
             
               <a
-                href={about?.resume}
+                href={resumePdf}
                 target="_blank"
                 // rel="noopener noreferrer"
                 className="w-full sm:w-auto"
