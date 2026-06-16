@@ -94,7 +94,7 @@ const HeroSection = () => {
               <a
                 href={resumePdf}
                 target="_blank"
-                // rel="noopener noreferrer"
+                rel="noopener noreferrer"
                 className="w-full sm:w-auto"
               >
                 <Button
