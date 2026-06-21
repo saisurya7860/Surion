@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "homepage": "https://saisurya.me",
-  "type": "module",
+  "type": "module", 
   "scripts": {
     "dev": "vite",
     "build": "vite build",
